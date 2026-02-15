@@ -5,6 +5,14 @@
   ...
 }:
 {
+  devcontainer = {
+    enable = true;
+    settings = {
+      "updateRemoteUserUID" = false;
+      "containerUser" = "vscode";
+      "remoteUser" = "vscode";
+    };
+  };
   languages.rust = {
     enable = true;
     mold.enable = false;
@@ -22,6 +30,7 @@
   };
   packages = [
     # pkgs.cmake
+    pkgs.just
     pkgs.pkg-config
     pkgs.mesa-gl-headers
     pkgs.mesa
@@ -35,7 +44,7 @@
     pkgs.vulkan-headers
     pkgs.vulkan-loader
     pkgs.sccache
-    pkgs.wild-wrapped
+    pkgs.wild
     pkgs.clang
   ];
   env = {

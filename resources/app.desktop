@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Antiquar
+Comment=        
+Type=Application
+Icon=com.github.dechro.antiquar
+Exec=antiquar %F
+Terminal=false
+StartupNotify=true
+Categories=COSMIC
+Keywords=COSMIC
+MimeType=
